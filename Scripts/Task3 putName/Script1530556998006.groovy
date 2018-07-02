@@ -24,15 +24,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://buggy-testingcup.pgs-soft.com/task_3')
 
-WebUI.click(findTestObject('Page_Welcome (3)/a_Menu'))
+WebUI.click(findTestObject('Page_Welcome (4)/a_Przejd do trybu edycji'))
 
-WebUI.click(findTestObject('Page_Welcome (3)/a_Formularz'))
+WebUI.setText(findTestObject('Page_Welcome (4)/input_in-name'), 'Eminem')
 
-WebUI.click(findTestObject('Page_Welcome (3)/a_Przejd do trybu edycji'))
-
-WebUI.setText(findTestObject('Page_Welcome (3)/input_in-name'), 'Justin')
-
-WebUI.click(findTestObject('Page_Welcome (3)/button_Zapisz'))
+WebUI.click(findTestObject('Page_Welcome (4)/button_Zapisz'))
 
 WebUI.closeBrowser()
 
